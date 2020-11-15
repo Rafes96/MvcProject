@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SalesWebMVC.Models;
 
+
 namespace SalesWebMVC.Controllers
 {
     public class HomeController : Controller
@@ -26,6 +27,12 @@ namespace SalesWebMVC.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+
+        public IActionResult Rafael()
+        {
+            ViewData["Nome"] = "Rafael Ferreira de Araujo";
             return View();
         }
 
